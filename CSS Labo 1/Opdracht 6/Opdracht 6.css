@@ -5,13 +5,13 @@ p {
     font-family: "Times New Roman";
     font-size: 1.2em;
 }
-#h2fontsize{
+.h2fontsize{
     font-size: 1.8em;
 }
-#h3fontsize{
+.h3fontsize{
     font-size: 1.5em;
 }
-#h4fontsize{
+.h4fontsize{
     font-size: 1.4em;
 }
 #p1color{
