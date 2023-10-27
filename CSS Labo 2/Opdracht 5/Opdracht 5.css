@@ -1,0 +1,11 @@
+a {
+    background-image: url("Images/unicorn.png");
+    padding: 10px 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 15px;
+}
+h2 {
+    font-family: Verdana, serif;
+    font-size: 15px;
+}
