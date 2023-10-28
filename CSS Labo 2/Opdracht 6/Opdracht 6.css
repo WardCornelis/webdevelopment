@@ -8,9 +8,4 @@
 }
 ul .checked {
     background-image: url("Images/Afgevinkt kader.png");
-    list-style: none;
-    padding: 10px 30px;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 15px;
 }
