@@ -1,0 +1,42 @@
+body{
+    font-family: Verdana, sans-serif;
+}
+#hoofdAfbeelding{
+    background-repeat: no-repeat;
+    background-image: url("../../Nature Blog/Images/Hoofding blaadjes.jpg");
+    padding-bottom: 30px;
+    text-decoration: none;
+    color: white;
+}
+#hoofdTitel{
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 1.7em;
+}
+#nav{
+    color: black;
+    background-color: darkslategrey;
+    padding: 5px;
+    font-size: 0.8em;
+}
+nav > a{
+    color: lightgreen;
+    text-decoration: none;
+}
+article{
+    background-color: whitesmoke;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+header{
+    color: darkslategrey;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+p{
+    font-size: 0.8em;
+}
