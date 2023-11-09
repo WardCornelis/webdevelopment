@@ -1,0 +1,37 @@
+table{
+    border: 2px solid  black;
+    border-collapse: collapse;
+}
+td{
+    border: 1px dotted black;
+}
+th{
+    border: 1px dotted rgb(200,190,240);
+}
+tr td:last-child{
+    background-color: rgb(255,220,220);
+}
+tr td:first-child{
+    background-color: rgb(255,220,220);
+}
+#hoofding{
+    background-color: rgb(170,170,200);
+}
+tr td.andereMaand{
+    background-color: lightgray;
+    color: grey;
+}
+.dagenOpmaak{
+    background-color: rgb(35, 37, 70);
+    color: rgb(200, 190, 240);
+}
+.vrijeDag{
+    background-color: rgb(250,120,120);
+}
+.specialDag{
+    color: rgb(200,190,240);
+    text-decoration: underline;
+}
+
+
+
