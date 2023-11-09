@@ -41,4 +41,13 @@ h3{
     background-color: burlywood;
     margin-bottom: 5px;
     padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.naastelkaar{
+    display: inline-block;
+    width: 31%;
+}
+a:hover{
+    color: red;
 }
