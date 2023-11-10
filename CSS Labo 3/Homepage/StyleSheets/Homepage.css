@@ -1,6 +1,11 @@
 .div{
     padding-left: 172px;
 }
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 #titel{
     background-color: darkgray;
     color: darkblue;
