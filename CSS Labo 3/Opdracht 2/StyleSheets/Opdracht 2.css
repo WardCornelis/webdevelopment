@@ -3,7 +3,7 @@ table {
     text-align: left;
     width: 100%;
 }
-div {
+.opmaak {
     font: normal 12px/150% Arial, Helvetica, sans-serif;
     overflow: hidden;
     border: 1px solid #000000;
