@@ -1,4 +1,25 @@
 body{
     font-family: Verdana, Helvetia, Arial, sans-serif;
-
+    font-size: 1.2em;
+}
+h1, h2{
+    color: rgb(0,126,126);
+}
+.weeklySpecials > p > a:hover{
+    background-color: saddlebrown;
+}
+.weeklySpecials > h1{
+    color: black;
+}
+.weeklySpecials > h2{
+    color: #EF233C;
+}
+h1{
+    font-size: 150%;
+}
+h2{
+    font-size: 130%;
+}
+footer{
+    font-size: 0.6em;
 }
