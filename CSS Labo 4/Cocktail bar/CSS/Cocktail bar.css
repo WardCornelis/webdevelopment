@@ -44,7 +44,7 @@ header{
 a{
     color: rgb(0,126,126);
 }
-section{
+div{
     width: 70%;
     box-sizing: border-box;
     padding-top: 15px;
@@ -65,7 +65,7 @@ section{
 li:first-of-type{
     font-style: oblique;
 }
-div{
+li div{
     display: inline;
     font-weight: bold;
 }
