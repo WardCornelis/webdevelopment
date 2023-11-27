@@ -53,6 +53,10 @@ article{
     padding: 20px 30px 20px 0;
     margin-right: 10px;
 }
+article p{
+    margin: 0;
+    overflow: hidden;
+}
 span{
     color: blue;
     font-weight: bold;
