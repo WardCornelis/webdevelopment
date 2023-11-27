@@ -44,19 +44,28 @@ h3{
 }
 main{
     width: 75%;
-    margin-right: 10px;
 }
 figure{
     float: left;
-    margin: 20px 20px 0 20px;
+    margin: 20px 20px 20px 20px;
 }
-main p{
+article{
     padding: 20px 30px 20px 0;
+    margin-right: 10px;
 }
 span{
     color: blue;
     font-weight: bold;
     font-style: italic;
+}
+.foto-venster{
+    background-color: #999999;
+    margin-right: 10px;
+}
+.foto-venster div{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .foto{
     width: 180px;
@@ -65,10 +74,7 @@ span{
     background-color: white;
     border: 1px dotted #999999;
     display: inline-block;
-    margin: 20px;
-}
-main > div{
-    background-color: #999999;
+    margin: 10px;
 }
 nav{
     background-color: #666666;
