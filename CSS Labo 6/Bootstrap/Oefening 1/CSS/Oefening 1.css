@@ -10,6 +10,6 @@ body{
     background-clip: content-box;
     padding: 12px;
 }
-.row div:first-child, div:last-child{
+.row div:first-child, .row div:last-child{
     background-color: lightgray;
 }
