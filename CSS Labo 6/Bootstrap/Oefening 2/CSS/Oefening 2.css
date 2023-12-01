@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+.row div{
+    height: 150px;
+    background-clip: content-box;
+    padding: 12px;
+    background-color: lightgray;
+}
+.row div:nth-of-type(2n){
+    background-color: darkgray;
+}

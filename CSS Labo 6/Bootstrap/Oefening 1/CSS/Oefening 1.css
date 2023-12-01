@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+.container-fluid{
+    display: grid;
+}
+.row div {
+    background-color: darkgray;
+    height: 150px;
+    background-clip: content-box;
+    padding: 12px;
+}
+.row div:first-child, div:last-child{
+    background-color: lightgray;
+}
