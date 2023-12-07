@@ -1,5 +1,8 @@
 .container{
-
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(3, auto);
+    gap: 10px 10px;
 }
 
 .container .block{
@@ -11,26 +14,38 @@
 }
 
 .block.block1{
-
+    background-color: darkmagenta;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 .block.block2{
-
+    background-color: darkslateblue;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 .block.block3{
-
+    background-color: steelblue;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 .block.block4{
-
+    background-color: lightslategrey;
 }
 .block.block5{
-
+    background-color: hotpink;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 .block.block6{
-
+    background-color: darkmagenta;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .block.block7{
-
+    background-color: darkslateblue;
 }
 .block.block8{
-
+    background-color: steelblue;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
