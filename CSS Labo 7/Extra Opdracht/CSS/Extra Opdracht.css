@@ -1,9 +1,9 @@
-div{
+main{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px 10px;
 }
-div div {
+main div {
     color: white;
     padding: 20px;
     text-align: center;
