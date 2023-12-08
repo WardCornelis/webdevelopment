@@ -1,5 +1,6 @@
 section{
     display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 10px 10px;
 }
 section div {
@@ -7,6 +8,9 @@ section div {
     padding: 20px;
     text-align: center;
     font-size: 3em;
+}
+.item-1 {
+    background: #b03532;
 }
 .item-2 {
     background: #33a8a5;
@@ -20,6 +24,9 @@ section div {
 .item-5 {
     background: #da6f2b;
 }
+.item-6 {
+    background: #3d8bb1;
+}
 .item-7 {
     background: #e03f3f;
 }
@@ -32,6 +39,9 @@ section div {
 @media only screen and (max-width: 759px){
     section{
         grid-template-columns: repeat(2, auto);
+    }
+    .item-1{
+        display: none
     }
     .item-2{
         grid-row-start: 1;
@@ -55,6 +65,9 @@ section div {
         grid-column-start: 2;
         grid-column-end: 3;
     }
+    .item-6{
+        display: none;
+    }
     .item-7 {
         grid-row-start: 3;
         grid-row-end: 4;
@@ -72,16 +85,5 @@ section div {
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
-    }
-}
-@media only screen and (min-width: 760px){
-    section{
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-    .item-1 {
-        background: #b03532;
-    }
-    .item-6 {
-        background: #3d8bb1;
     }
 }
