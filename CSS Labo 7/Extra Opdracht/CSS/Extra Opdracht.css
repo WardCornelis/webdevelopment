@@ -1,9 +1,9 @@
-section{
+div{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px 10px;
 }
-section div {
+div div {
     color: white;
     padding: 20px;
     text-align: center;
@@ -37,7 +37,7 @@ section div {
     background: #4464a1;
 }
 @media only screen and (max-width: 759px){
-    section{
+    div{
         grid-template-columns: repeat(2, auto);
     }
     .item-1{
