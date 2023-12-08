@@ -37,7 +37,7 @@ main div {
     background: #4464a1;
 }
 @media only screen and (max-width: 759px){
-    div{
+    main{
         grid-template-columns: repeat(2, auto);
     }
     .item-1{
