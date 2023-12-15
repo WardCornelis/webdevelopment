@@ -33,16 +33,16 @@ nav a{
 main{
     background-color: grey;
 }
-section{
+div{
     margin: 5px;
     background-color: white;
     display: flex;
     flex-direction: column;
 }
-section p{
+div p{
     align-self: flex-start;
 }
-section a{
+div a{
     border: 1px solid #333;
     text-decoration: none;
     color: #8D99AE;
@@ -60,7 +60,7 @@ img{
         flex-direction: row;
         justify-content: space-between;
     }
-    section{
+    div{
         flex-grow: 1;
         min-width: 0;
     }
