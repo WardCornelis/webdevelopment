@@ -1,0 +1,9 @@
+p {
+    display: inline-block;
+    margin: 0;
+}
+
+#FoodPicture {
+    display: block;
+}
+
