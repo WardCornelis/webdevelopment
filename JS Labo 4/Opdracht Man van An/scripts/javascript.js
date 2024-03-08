@@ -11,6 +11,6 @@ const setup = () => {
             stopZoektocht = true;
         }
     }
-    console.log(aantal);
+    console.log(`An komt ${aantal} keer voor in de opgegeven tekst.`);
 }
 window.addEventListener("load", setup);
