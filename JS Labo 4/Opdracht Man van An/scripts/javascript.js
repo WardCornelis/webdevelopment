@@ -1,5 +1,5 @@
 const setup = () => {
-    let tekst = "De man van An geeft geen hand aan ambetante verwanten";
+    let tekst = "De man van An geeft geen hand aan ambetante verwanten".toLowerCase();
     let stopZoektocht = false;
     let startWaarde = 0;
     let aantal = 0;
