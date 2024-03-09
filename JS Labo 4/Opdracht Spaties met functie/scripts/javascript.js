@@ -1,9 +1,9 @@
 const setup = () => {
     let btnCut = document.getElementById("btnCut");
-    btnCut.addEventListener("click", verknip);
+    btnCut.addEventListener("click", maakMetSpaties);
 }
 
-const verknip = () => {
+const maakMetSpaties = () => {
     let txtInput = document.getElementById("TxtInput");
     let text = txtInput.value.split("");
     let resultaat = "";
