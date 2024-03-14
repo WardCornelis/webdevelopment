@@ -14,31 +14,29 @@
         <h1>Opdracht Formwaarden</h1>
     </header>
 </section>
-<form onsubmit="return false" action="Opdracht%20formwaarden.html" method="get">
-    <div>
-        <label for="isRoker">Is roker</label>
-        <input type="checkbox" id="isRoker" name="isRoker">
-    </div>
-    <div>
-        <p>Moedertaal</p>
-        <input type="radio" id="nl" name="Moedertaal">
-        <label for="nl">Nederlands</label>
-        <input type="radio" id="fr" name="Moedertaal">
-        <label for="fr">Frans</label>
-        <input type="radio" id="en" name="Moedertaal">
-        <label for="en">Engels</label>
-    </div>
-    <div>
-        <label for="FavorieteBuurland">Favoriete buurland</label>
-        <select name="FavorieteBuurland" id="FavorieteBuurland">
+<form onsubmit="return false" action="Opdracht%20formwaarden.html" method="get" class="grid-container">
+    <label class="groep-links" for="isRoker">Is roker</label>
+        <input class="groep-rechts" type="checkbox" id="isRoker" name="isRoker">
+
+    <p class="groep-links">Moedertaal</p>
+        <div class="groep-rechts">
+            <input type="radio" id="nl" name="Moedertaal">
+            <label for="nl">Nederlands</label>
+            <input type="radio" id="fr" name="Moedertaal">
+            <label for="fr">Frans</label>
+            <input type="radio" id="en" name="Moedertaal">
+            <label for="en">Engels</label>
+        </div>
+
+    <label class="groep-links" for="FavorieteBuurland">Favoriete buurland</label>
+        <select class="groep-rechts" name="FavorieteBuurland" id="FavorieteBuurland">
             <option value="Nederland">Nederland</option>
             <option value="Frankrijk">Frankrijk</option>
             <option value="Duitsland">Duitsland</option>
         </select>
-    </div>
-    <div>
-        <label for="Bestelling">Bestelling</label>
-        <select name="Bestelling" id="Bestelling" multiple size="6">
+
+    <label class="groep-links" for="Bestelling">Bestelling</label>
+        <select class="groep-rechts" name="Bestelling" id="Bestelling" multiple size="6">
             <option value="aardappelen">aardappelen</option>
             <option value="brood">brood</option>
             <option value="melk">melk</option>
@@ -46,8 +44,8 @@
             <option value="chips">chips</option>
             <option value="krant">krant</option>
         </select>
-    </div>
-    <input type="submit" name="ToonResultaat" value="Toon resultaat">
+
+    <input class="groep-links" type="submit" name="ToonResultaat" value="Toon resultaat">
 </form>
 <script src="scripts/javascript.js"></script>
 </body>
