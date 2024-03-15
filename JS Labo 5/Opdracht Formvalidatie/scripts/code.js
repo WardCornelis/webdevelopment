@@ -77,7 +77,7 @@ const valideerAantalKinderen = () => {
 	let txtKinderen = document.getElementById("txtKinderen");
 	let errKinderen = document.getElementById("errKinderen");
 	let kinderen = parseInt(txtKinderen.value.trim());
-	if(kinderen !== null) {
+	if(txtKinderen.value === null) {
 		txtKinderen.className = "invalid";
 		errKinderen.innerHTML = "is geen positief getal";
 	} else if (kinderen >= 0) {
