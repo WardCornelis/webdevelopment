@@ -64,7 +64,7 @@ const valideerEmail = () => {
 	if(email.length === 0) {
 		txtEmail.className = "invalid";
 		errEmail.innerHTML = "verplicht veld";
-	} else if(!/^[a-z|A-Z]@[a-z|A-Z]$/.test(email)) {
+	} else if(!/^[a-z|A-Z]+@[a-z|A-Z]+$/.test(email)) {
 		txtEmail.className = "invalid";
 		errEmail.innerHTML = "geen geldig email adres";
 	} else {
@@ -94,7 +94,6 @@ const valideerAantalKinderen = () => {
 
 const eindControle =() => {
 	let aantalInvalids = document.getElementsByClassName("invalid");
-	console.log(aantalInvalids);
 	if(aantalInvalids.length === 0){
 		window.alert("proficiat!")
 	}
