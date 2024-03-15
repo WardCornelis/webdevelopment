@@ -1,6 +1,6 @@
 const setup = () => {
     window.addEventListener("submit", log)
-}
+};
 
 const log = () => {
     let resultaat = "";
@@ -43,6 +43,6 @@ const log = () => {
         }
     }
     console.log(resultaat.trim());
-}
+};
 
 window.addEventListener("load", setup);
