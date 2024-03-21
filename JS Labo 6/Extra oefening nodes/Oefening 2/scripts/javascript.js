@@ -5,8 +5,8 @@ const setup = () => {
         liElementen[i].classList.add("listitem");
     }
     let img = document.createElement("img");
-    section.append(img);
     img.setAttribute('src','Images/WardCornelis.formated.jpg');
     img.setAttribute('alt','Afbeelding van Ward');
+    section.append(img);
 }
 window.addEventListener("load", setup);

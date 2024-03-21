@@ -1,0 +1,22 @@
+p {
+    display: inline;
+}
+
+#Swatch {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#Inputs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.savedColors {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+}
