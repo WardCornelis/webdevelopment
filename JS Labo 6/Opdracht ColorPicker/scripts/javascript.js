@@ -11,7 +11,7 @@ const setup = () => {
 }
 
 const removeSaved = (event) => {
-    if(event.target.matches('#Deletebtn')){
+    if(event.target.matches('.Deletebtn')){
         let savedSection = document.querySelector('#Saved');
         savedSection.removeChild(event.target.parentElement);
     }
@@ -20,11 +20,9 @@ const removeSaved = (event) => {
 const setToColor = (event) => {
     if(event.target.matches('.savedColors')){
         let computedStyle = window.getComputedStyle(event.target).backgroundColor.toString();
-        let swatch = document.querySelector('#Swatch');
         let redSlider = document.querySelector('#RedSlider');
         let greenSlider = document.querySelector('#GreenSlider');
         let blueSlider = document.querySelector('#BlueSlider');
-
 
         let nakedValues = computedStyle.slice(4,-1);
         let comma = nakedValues.indexOf(',');
@@ -52,7 +50,7 @@ const addToSaved = (event) =>{
 
         let div = document.createElement('div');
         div.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
-        div.innerHTML = `<input id="Deletebtn" type="button" value="X" name="Delete">`;
+        div.innerHTML = `<input class="Deletebtn" type="button" value="X" name="Delete">`;
         div.classList.add('savedColors');
         savedSection.append(div);
     }
