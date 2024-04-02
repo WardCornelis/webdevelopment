@@ -5,6 +5,10 @@
     position: absolute;
 }
 
+#AantalHits {
+    display: inline-block;
+}
+
 #Target {
     position: absolute;
 }
