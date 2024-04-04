@@ -1,0 +1,51 @@
+body {
+    background-color: darkslateblue;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.fouteAchtergrond {
+    background-color: #EF233C;
+}
+
+.goedeAchtergrond {
+    background-color: green;
+}
+
+img {
+    width: 244px;
+    height: 218px;
+    border: 5px solid grey;
+    border-radius: 10px;
+}
+
+.plaatsVervangend {
+    width: 254px;
+    height: 232px;
+}
+
+#PlayField {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
+    gap: 10px;
+}
+
+.voorkant {
+    backface-visibility: hidden;
+    display: none;
+}
+
+.zichtbareVoorkant {
+    display: inline;
+}
+
+.achterkant {
+    backface-visibility: hidden;
+    display: inline;
+}
+
+.achterkantOnzichtbaarMaken {
+    display: none;
+}
+
