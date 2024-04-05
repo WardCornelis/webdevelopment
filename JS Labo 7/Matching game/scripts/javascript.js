@@ -5,9 +5,7 @@ let global = {
     KAARTEN_VOOR_HIT: 2,
     IMAGE_PATH_PREFIX: "Images/",
     IMAGE_PATH_SUFFIX: ".png",
-    GECOMBINEERDE_KAARTEN: 0
 }
-
 
 const setup = () => {
     maakSpeelveld();
@@ -49,6 +47,7 @@ const actiesBijKlikOpKaart = (event) => {
 }
 
 const valideerKaarten = () => {
+
     let speelveld = document.querySelector('#PlayField');
     let body = document.querySelector('#Achtergrond');
     let omgedraaideKaarten = document.querySelectorAll('.zichtbareVoorkant');
@@ -68,9 +67,11 @@ const valideerKaarten = () => {
         }
         if (isNietGelijk) {
             body.classList.add('fouteAchtergrond');
+            document.querySelector('#slechteCombo').play();
             setTimeout(draaiTerug, 5000, speelveld, body);
         } else {
             body.classList.add('goedeAchtergrond');
+            document.querySelector('#goedeCombo').play();
             setTimeout(verwijderKaarten,5000, speelveld, body);
         }
     }
@@ -92,6 +93,7 @@ const verwijderKaarten = (a, b) => {
 const draaiTerug = (a, b) => {
     let omgedraaideKaarten = document.querySelectorAll('.zichtbareVoorkant');
     for(let i = 0; i < omgedraaideKaarten.length; i++) {
+        document.querySelector('#draaiKaart').play();
         omgedraaideKaarten[i].classList.remove('zichtbareVoorkant');
         omgedraaideKaarten[i].classList.add('voorkant');
         omgedraaideKaarten[i].nextElementSibling.classList.add('achterkant');
@@ -103,6 +105,9 @@ const draaiTerug = (a, b) => {
 
 const toonAfbeelding = (event) => {
     let kaart = event.currentTarget;
+    if(kaart.firstElementChild.className !== "zichtbareVoorkant"){
+        document.querySelector('#draaiKaart').play();
+    }
     kaart.firstElementChild.classList.remove('voorkant');
     kaart.firstElementChild.classList.add('zichtbareVoorkant');
     kaart.lastElementChild.classList.add('achterkantOnzichtbaarMaken');
