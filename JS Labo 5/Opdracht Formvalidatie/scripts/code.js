@@ -1,9 +1,9 @@
 const setup = () => {
 	let btnValideer=document.getElementById("btnValideer");
-	btnValideer.addEventListener("click", valideer);
+	btnValideer.addEventListener("click", valideere);
 };
 
-const valideer = () => {
+const valideere = () => {
 	valideerVoornaam();
 	valideerAchternaam();
 	valideerGeboortedatum();
