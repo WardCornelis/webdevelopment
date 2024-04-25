@@ -19,7 +19,7 @@ const removeSaved = (event) => {
     savedSection.removeChild(event.target.parentElement);
 
     savedSwatches.length = 0;
-
+    
     let savedDivSwatches = document.querySelectorAll('.savedColors');
     for(let i = 0; i < savedDivSwatches.length; i++){
         let swatchValues = {};
